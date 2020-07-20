@@ -1,0 +1,479 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+  }
+/*This is the updated part from cashier page*/
+
+.search_table_row_size
+{
+    width:50px;
+}
+
+/*#transaction_search_query_display{
+    border-collapse:collapse;
+    overflow-y: auto;
+
+}*/
+#display_specific_transaction_div{
+    position:fixed;
+    top:30%;
+    right:3%;
+    overflow-y: auto;
+    height:60%;
+    width: 25%;
+    border-style:double;
+    background-color: white;
+}
+#transaction_search_query_display_div{
+    position:fixed;
+    top:52%;
+    right:30%;
+    overflow-y: auto;
+    height:30%;
+    width: 40%;
+    border-style:double;
+    background-color: white;
+    
+}
+
+ #display_specific_transaction_id{
+     position:fixed;
+     top:140px;
+     right:209px;
+     font-weight:bold;
+ }
+ #display_specific_transaction_time{
+    position:fixed;
+    right:318px;
+    top:180px;
+    font-weight:bold;
+ }
+#display_specific_transaction_date{
+    position:fixed;
+    right:303px;
+    top:160px;
+    font-weight:bold;
+ }
+#display_hash_value{
+    position:fixed;
+    right:89px;
+    top:200px;
+    font-weight:bold;
+} 
+
+
+#search_element_button{
+    border:none;
+}
+ #transaction_search_text{
+     position:fixed;
+     font-size:16px;
+     padding: 10px 15px;
+     top:10%;
+     right:170px;
+ }
+#digital_live_clock
+{
+    position:fixed;
+    bottom:5%;
+    right:48%;
+    font-weight:bold;
+    font-size:25px;
+    
+}
+#input_error_message
+{
+    position:fixed;
+    top:17%;
+    right:3%;
+    font-size:22px;
+    font-weight:bold;
+}
+.dropbtn {
+    position: fixed;
+    top:10%;
+    right:65px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: none;
+}
+
+            
+.dropdown-content {
+  display: none;
+  position: fixed;
+  padding: 10px 15px;
+  top:112px;
+  right:10px;
+  background-color: #f1f1f1;
+  
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+               
+.dropdown-content a {
+   color: black;
+   padding: 15px 15px;
+   text-decoration: none;
+   display: block;
+  }
+                
+.dropdown-content a:hover {background-color: #ddd; }
+               
+.dropdown:hover .dropdown-content {display: block; }
+                
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+#transaction_id{
+    width:160px;
+    font-weight:bold;
+}
+
+#date{
+    width:160px;
+    font-weight:bold;
+}
+
+#refund_button{
+    position:fixed;
+    bottom:25px;
+    left: 320px;
+    padding: 20px;
+    width: 130px;
+    border-radius:10px;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #d9d9d9;
+}
+#Receipt{
+    position:fixed;
+    top:35%;
+    right:3%;
+    overflow-y: auto;
+    height:20%;
+    width: 25%;
+    border-style:double;
+    background-color: white;
+}
+
+#receipt_transaction_id{
+    position:fixed;
+    top:23%;
+    right:8%;
+    font-weight: bold;
+}
+#receipt_date{
+    position:fixed;
+    top:26%;
+    right:12%;
+    font-weight: bold;
+}
+
+#receipt_time{
+  position:fixed;
+    top:29%;
+    right:13%;
+    font-weight: bold;
+}
+
+#receipt_total_price{
+    position:fixed;
+    top:32%;
+    right:12%;
+    font-weight: bold;
+}
+#empty_error{
+    position:fixed;
+    bottom:20%;
+    left:40%;
+    font-weight:bold;
+    font-size: 40px;
+}
+/*To here*/
+* {
+    box-sizing: border-box;
+  }
+  
+body{
+    position: relative;
+    text-align:center;
+    background-color: #f2f2f2;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: grid;
+}
+h1{ 
+    position:fixed;
+    top:-5%;
+    width:100%;
+    text-align: center;
+    font-size:50px;
+    color:white;
+    background-color: #58b6db;
+}
+/*
+h2{
+    position: fixed;
+    right:15%;
+    top:7%;
+    margin-left:500%;
+}
+*/
+#remove_button{
+    position:fixed;
+    bottom:25px;
+    left:180px;
+    padding: 20px;
+    width: 130px;
+    border-radius:10px;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #d9d9d9;
+}
+
+
+
+#pay_button
+{
+    position:fixed;
+    bottom:25px;
+    left:50px;
+    padding: 20px;
+    width: 110px;
+    border-radius:10px;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #d9d9d9;
+}
+
+
+
+#total_display
+{
+    position:fixed;
+    top:65%;
+    left:21%;
+    width:100px;
+    font-size:20px;
+    font-weight:bold;
+    border:ridge;
+    border-radius:1px;
+    background-color:white;
+}
+#admin_login_button
+{
+    position:fixed ;
+    bottom:25px;
+    padding: 7px;
+    width:100px;
+    right:50px;
+    border-radius:10px;
+    background-color: #d9d9d9;
+}
+
+#log_out_button
+{
+    position:fixed;
+    bottom:25px;
+    padding: 7px;
+    width: 100px;
+    right:170px;
+    border-radius:10px;
+    background-color: #d9d9d9;
+}
+
+#item_no_styling{
+    text-align:center;
+}
+
+#table_display{
+    position:fixed;
+    top:15%;
+    left:3%;
+    overflow-y: auto;
+    height:50%;
+    width: 25%;
+    border-style:double;
+    background-color: white;
+}
+
+
+#tandoori{
+    position: fixed;
+    top: 15%;
+    right: 60%;
+    padding: 15px;
+    border-radius: 10px;
+    width: 110px;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #d9d9d9;
+}
+
+#c_momo{
+    position: fixed;
+    top: 15%;
+    right: 51%;
+    padding: 15px;
+    border-radius: 10px;
+    width: 110px;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #d9d9d9;
+}
+
+#biryani{
+    position: fixed;
+    top: 15%;
+    right: 42%;
+    padding: 15px;
+    border-radius: 10px;
+    width: 110px;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #d9d9d9;
+}
+
+
+#idli{
+    position: fixed;
+    top: 15%;
+    right: 33%;
+    padding: 15px;
+    border-radius: 10px;
+    width: 110px;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #d9d9d9;
+}
+
+#dosa{
+    position: fixed;
+    top: 39%;
+    right: 60%;
+    padding: 15px;
+    border-radius: 10px;
+    width: 110px;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #d9d9d9;
+}
+
+#paratha{
+    position: fixed;
+    top: 39%;
+    right: 51%;
+    padding: 15px;
+    border-radius: 10px;
+    width: 110px;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #d9d9d9;
+}
+
+#thali{
+    position: fixed;
+    top: 39%;
+    right: 42%;
+    padding: 15px;
+    border-radius: 10px;
+    width: 110px;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #d9d9d9;
+}
+
+#thukpa{
+    position: fixed;
+    top: 39%;
+    right: 33%;
+    padding: 15px;
+    border-radius: 10px;
+    width: 110px;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #d9d9d9;
+}
+
+#chapati{
+    position: fixed;
+    top: 27%;
+    right: 60%;
+    padding: 15px;
+    border-radius: 10px;
+    width: 110px;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #d9d9d9;
+}
+#sambar{
+    position: fixed;
+    top: 27%;
+    right: 51%;
+    padding: 15px;
+    border-radius: 10px;
+    width: 110px;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #d9d9d9;
+}
+#halwa{
+    position: fixed;
+    top: 27%;
+    right: 51%;
+    padding: 15px;
+    border-radius: 10px;
+    width: 110px;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #d9d9d9;
+}
+
+#sambar{
+    position: fixed;
+    top: 27%;
+    right: 42%;
+    padding: 15px;
+    border-radius: 10px;
+    width: 110px;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #d9d9d9;
+}
+
+
+#curry{
+    position: fixed;
+    top: 27%;
+    right: 33%;
+    padding: 15px;
+    border-radius: 10px;
+    width: 110px;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #d9d9d9;
+}
+
+#item_no_styling{
+    border:groove;
+    height:1px;
+    width:1px;
+    border-radius:50%;
+}

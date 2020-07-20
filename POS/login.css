@@ -1,0 +1,98 @@
+#sumit:hover {
+cursor: pointer;
+}
+
+body{
+    background: #f2f2f2;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1
+{
+    position:relative;
+    text-align: center;
+    font-size: 300%;
+    background-color: #58b6db;
+    color: #FFFFFF;
+    padding: 15px 0px 15px 0px;
+}
+
+.container
+{
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 260px;
+    height: 30vh;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    bottom: -10vh;
+}
+
+#uText
+{
+   position:relative;
+   font-size: 20px;
+   top: 8%;
+   left: 17%;
+   border-radius: 3px;
+   border: none;
+   height: 30px;
+   width: 60%;
+}
+
+#uBox
+{
+   position:relative;
+   background-color: #E8F0FE;
+   border-radius: 3px;
+   border: none;
+   height: 30px;
+   width: 60%;
+   top: 20%;
+   left: -17%;
+}
+
+#pText
+{
+    position: relative;
+    font-size:20px;
+    font-weight: 400;
+    top: 28%;
+    left: 16%;
+}
+
+#pBox
+{
+    position: relative;
+    border-radius: 3px;
+    width: 60%;
+    border: none;
+    height: 30px;
+    background-color: #E8F0FE;
+    left: -15%;
+    top: 40%;
+}
+
+#sumit
+{
+    text-transform: uppercase;
+    position: relative;
+    font-size: 20px;
+    height: 7vh;
+    top: 60%;
+    width: 50%;
+    color: white;
+    background-color:#58b6db;
+    border: none;
+}
+
+.error_message{
+    position: relative;
+    text-align:center;
+    color: red;
+    margin: 0 auto 100px;
+    border: 3px solid green;
+}
